@@ -1,0 +1,121 @@
+/* General Reset */
+body, h1, p, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6C63FF, #3A86FF);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: #ffffff;
+    color: #333333;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+.container h1 {
+    font-size: 2rem;
+    color: #3A86FF;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+.container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555555;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-box input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #3A86FF;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    flex: 1;
+}
+
+.search-box button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: #3A86FF;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #6C63FF;
+}
+
+/* Results Section */
+.results {
+    text-align: left;
+}
+
+.results a {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    background: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.results a:hover {
+    background: #3A86FF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    .search-box button {
+        font-size: 0.9rem;
+    }
+}
