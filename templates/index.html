@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTU Question Paper Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>KTU Question Paper Downloader</h1>
+        <p>Enter the course code below to search for question papers.</p>
+
+        <div class="search-box">
+            <input type="text" id="courseCode" placeholder="Enter Course Code (e.g., MAT203)">
+            <button onclick="searchPapers()">Search</button>
+        </div>
+
+        <div id="results" class="results">
+            <!-- Links to question papers will appear here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
